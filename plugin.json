@@ -1,10 +1,8 @@
 {
     "name": "RAG2F Plugin Template",
-    "version": "0.1.0",
+    "version": "0.0.1",
     "description": "Template repository for building RAG2F plugins",
-    "author_name": "RAG2F Team",
-    "author_url": "https://github.com/rag2f/rag2f",
-    "plugin_url": "https://github.com/rag2f/rag2f",
-    "tags": "template",
-    "min_rag2f_version": "0.1.0"
+    "author_name": "",
+    "author_url": "",
+    "plugin_url": ""
 }
