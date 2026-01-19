@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
-if [[ $# -eq 0 ]]; then
-  echo "Usage: ./scripts/init-plugin.sh --import-name rag2f_my_plugin --package-name rag2f-my-plugin [--description '...'] [--display-name '...']" >&2
-  exit 2
-fi
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+python_script="$script_dir/init-plugin.py"
 
-python3 scripts/init_plugin.py "$@"
+python "$python_script" "$@"
