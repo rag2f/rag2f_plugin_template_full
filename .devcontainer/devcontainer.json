@@ -39,7 +39,7 @@
       }
     }
   },
-  "postCreateCommand": "(sudo chown -R vscode:vscode /workspaces/${localWorkspaceFolderBasename}/.venv 2>/dev/null || true) && bash scripts/bootstrap-venv.sh",
+  "postCreateCommand": "(sudo chown -R vscode:vscode /workspaces/${localWorkspaceFolderBasename}/.venv 2>/dev/null || true) && git add --renormalize . && bash scripts/bootstrap-venv.sh",
   "postStartCommand": ". .venv/bin/activate && pip install uv && uv pip install -e . --index-url https://pypi.org/simple/ --extra-index-url https://test.pypi.org/simple/ --index-strategy unsafe-best-match --no-build-isolation && pre-commit install",
   "remoteUser": "vscode",
   "containerEnv": {
